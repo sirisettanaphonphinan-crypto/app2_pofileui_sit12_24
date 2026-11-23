@@ -27,14 +27,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      // 1) AppBar: ไอดีแอคเคาท์ + ไอคอนเมนู
+      backgroundColor: Colors.black12,
+      // ไอดีแอคเคาท์ + ไอคอนเมนู
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black12,
         centerTitle: false,
         title: const Text(
           'mark.siriset',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18,color: Colors.white),
+
         ),
         actions: [
           IconButton(
@@ -49,7 +50,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 2) ส่วนหัวโปรไฟล์: รูป + สถิติ 3 ช่อง
+              // ส่วนหัวโปรไฟล์: รูป + สถิติ 3 ช่อง
               Row(
                 children: [
                   const CircleAvatar(
@@ -65,24 +66,24 @@ class HomePage extends StatelessWidget {
                           children: [
                             Text('3',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 18)),
-                            Text('โพสต์'),
+                                    fontWeight: FontWeight.bold, fontSize: 18,color: Colors.white)),
+                            Text('โพสต์',style: TextStyle(color: Colors.white),),
                           ],
                         ),
                         Column(
                           children: [
                             Text('3',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 18)),
-                            Text('ผู้ติดตาม'),
+                                    fontWeight: FontWeight.bold, fontSize: 18,color: Colors.white)),
+                            Text('ผู้ติดตาม',style: TextStyle(color: Colors.white),),
                           ],
                         ),
                         Column(
                           children: [
                             Text('7',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 18)),
-                            Text('กำลังติดตาม'),
+                                    fontWeight: FontWeight.bold, fontSize: 18,color: Colors.white)),
+                            Text('กำลังติดตาม',style: TextStyle(color: Colors.white),),
                           ],
                         ),
                       ],
@@ -98,16 +99,16 @@ class HomePage extends StatelessWidget {
                 children: [
                   Text(
                     'ศิริเศรษฐ ธนพรภินันท์',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
                   ),
                   SizedBox(height: 4),
-                  Text('นักศึกษาแผนกเทคโนโลยีสารสนเทศ'),
-                  Text('ชอบเขียนโค้ด 💙'),
+                  Text('นักศึกษาแผนกเทคโนโลยีสารสนเทศ',style: TextStyle(color: Colors.white),),
+                  Text('ชอบเขียนโค้ด 💙',style: TextStyle(color: Colors.white),),
                 ],
               ),
               const SizedBox(height: 12),
 
-              // 4) ปุ่มติดตาม (ทึบ) + ปุ่มข้อความ (มีเส้นขอบ)
+              // ปุ่มติดตาม + ปุ่มข้อความ
               Row(
                 children: [
                   Expanded(
@@ -127,7 +128,7 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              // 5) แถบไอคอน
+              // แถบไอคอน
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -137,7 +138,7 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              // 6) แกลเลอรีภาพ 3 คอลัมน์
+              // แกลเลอรีภาพ 3 คอลัมน์
               GridView.count(
                 crossAxisCount: 3,
                 crossAxisSpacing: 2,
