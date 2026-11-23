@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: false,
         title: const Text(
-          'my_social_profile',
+          'mark.siriset',
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         ),
         actions: [
@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget {
                         ),
                         Column(
                           children: [
-                            Text('0',
+                            Text('3',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 18)),
                             Text('ผู้ติดตาม'),
@@ -79,7 +79,7 @@ class HomePage extends StatelessWidget {
                         ),
                         Column(
                           children: [
-                            Text('0',
+                            Text('7',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 18)),
                             Text('กำลังติดตาม'),
