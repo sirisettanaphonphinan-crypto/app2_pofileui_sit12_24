@@ -93,7 +93,7 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              // 3) ชื่อและแคปชัน
+              // ชื่อและแคปชัน
               const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
