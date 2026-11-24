@@ -114,6 +114,10 @@ class HomePage extends StatelessWidget {
                   Expanded(
                     child: FilledButton(
                       onPressed: () {},
+                      style: FilledButton.styleFrom(
+                      backgroundColor: Colors.lightBlueAccent,
+                        foregroundColor: Colors.black,
+                      ),
                       child: const Text('ติดตาม'),
                     ),
                   ),
