@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // ส่วนหัวโปรไฟล์: รูป + สถิติ 3 ช่อง
+              // ส่วนหัวโปรไฟล์: รูป + สถิติ โพสต์ ผู้ติดตาม กำลังติดตาม
               Row(
                 children: [
                   const CircleAvatar(
